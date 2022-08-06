@@ -1,0 +1,38 @@
+@use '../variables'
+@use '../mixins'
+
+#sidebar
+    background-color: variables.$bg-color
+    flex: 1 1 0
+    border-radius: variables.$container-border-radius
+    display: flex
+    align-items: center
+    flex-direction: column
+    text-align: center
+    position: relative
+    padding-bottom: 3rem 
+
+    img
+        max-width: 70%
+        border-radius: variables.$container-border-radius
+        position: absolute
+        top: -3rem
+
+    .nome
+        color: variables.$text-color
+        font-size: 40px
+        margin-top: 12rem
+
+    h2
+        font-family: variables.$font-sub-titulo
+        color: variables.$text-color-sub-titulo
+        font-size: 23px
+
+    .title
+        color: variables.$text-color-secondary
+        font-size: 18px
+        padding: 1rem 1rem 1rem 2.5rem
+        text-align: left
+
+    .btn
+        @include mixins.btn

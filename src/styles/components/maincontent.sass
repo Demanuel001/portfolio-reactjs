@@ -1,0 +1,58 @@
+@use '../variables'
+@use '../mixins'
+
+#main-content
+    background-color: variables.$bg-color
+    flex: 2 1 0
+    border-radius: variables.$container-border-radius
+    padding: 3rem
+
+    section
+        display: flex 
+        flex-direction: column
+
+    h2 
+        color: variables.$text-color
+        font-size: 2.2rem 
+        margin-bottom: 1.3rem
+        @include mixins.center
+        justify-content: start
+        gap: 1rem
+        
+        &:after
+            @include mixins.gradient-border
+    
+    h3
+        color: variables.$text-color-sub-titulo
+        font-size: 19px
+        margin-bottom: .6rem
+
+    .funcao
+        color: variables.$text-color-sub-titulo
+        font-size: 26px
+        margin-bottom: .6rem
+
+    .empresa
+        margin-left: 2rem
+        color: variables.$text-color-sub-titulo
+        font-size: 23px
+
+        i
+            margin-left: 1rem
+            font-family: variables.$font-sub-titulo
+            font-size: 14px
+
+    p 
+        @include mixins.p
+
+        li
+            margin-left: 2.4rem
+
+    .btn
+        @include mixins.btn 
+        align-self: start
+
+    .tres-pontinhos
+        color: #4040ff
+        font-size: 40px
+        @include mixins.center
