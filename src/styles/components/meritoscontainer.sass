@@ -11,28 +11,48 @@
         font-size: 2.2rem 
         margin-bottom: 2rem
         margin-top: 3rem
-        @include mixins.center
         gap: 1rem
-        
+        @include mixins.center
+
         &::before
             @include mixins.gradient-border
+            margin-left: 10px
 
         &:after
             @include mixins.gradient-border
+            margin-right: 10px
 
     .meritos-grid
-        margin: 2rem
-        display: flex
-        flex-wrap: wrap 
-        gap: 1.5rem
-        margin-bottom: 3rem
+        margin-left: 8rem
+        margin-right: 8rem
+        padding: 30px
+        display: grid
+        gap: 2rem
+        grid-template-columns: 1fr 1fr 1fr 
+        @media (max-width:1500px)
+            margin-left: 3rem
+            margin-right: 3rem
+            gap: 1rem
+        @media (max-width:1300px)
+            margin-left: 1rem
+            margin-right: 1rem
+            gap: 1rem
+        @media (max-width:1100px)
+            margin-left: .5rem
+            margin-right: .5rem
+            gap: 1rem
+        @media (max-width: 900px)
+            grid-template-columns: 1fr 1fr
+            margin-right: .2rem
+            gap: 1rem
+        @media (max-width: 550px)
+            grid-template-columns: 1fr
+            margin-right: .2rem
+            gap: 2rem
 
         .meritos-card
-            @include mixins.center 
+            border-radius: variables.$card-border-radius 
             box-shadow: 0 0 30px #0c0c0c
-            width: 32%
-            height: 250px
-            border-radius: variables.$card-border-radius
             text-align: center
             transition: transform 1s
             transform-style: preserve-3d
@@ -45,52 +65,40 @@
                 font-size: 6rem
 
             .icone-front
-                width: 100%
-                height: 100%
-                position: absolute
                 backface-visibility: hidden
 
-                img 
+                .img-card
+                    height: 285px
                     width: 100%
-                    height: 100%
                     border-radius: variables.$card-border-radius
+                    @media (max-width:1300px)
+                        height: 240px
+                    @media (max-width:1100px)
+                        height: 220px
 
             .icone-back
+                margin-top: -240px
+                position: fixed
                 transform: rotateY(180deg)
-                width: 100%
-                height: 100%
                 backface-visibility: hidden
 
                 h3 
                     margin: 3rem 1rem 1rem 1rem
                     color: variables.$text-color 
                     font-size: 1.3rem
+                    @media (max-width: 700px)
+                        font-size: 1rem
+
                 p 
                     margin: 1rem 1rem 1rem 1rem
                     color: variables.$text-color-secondary
                     line-height: 1.4rem
                     text-align: left
+                    @media (max-width: 700px)
+                        line-height: 1rem
 
-        #html
-            svg
-                color: #e44d26
-        
-        #css
-            svg
-                color: #1572b6
-
-        #js
-            svg
-                color: #f0db4f
-
-        #node
-            svg
-                color: #83cd29
-
-        #mysql
-            svg
-                color: #00618a
-
-        #react
-            svg
-                color: #61dafb
+.tres-pontinhos
+    color: #4040ff
+    font-size: 40px
+    @include mixins.center
+    margin-bottom: 30px

@@ -11,7 +11,7 @@ const meritos = [
     {id: 1, titulo: "Olimpíada do Conhecimento - 2016", info: "Eu e minha equipe ao chegar em Brasília-DF para o Festival Sesi de Robótica, First Lego League ( FLL ), novembro de 2016"},
     {id: 2, titulo: "Olimpíada do Conhecimento - 2016", info: "Competidor no Festival Sesi de Robótica, First Lego League ( FLL ) Medalha de Participação 11° colocação nível nacional, novembro de 2016"},
     {id: 3, titulo: "Olimpíada Brasileira de Robótica - 2016", info: "Medalhista na categoria de melhor Programação da Olimpíada Brasileira de Robótica (OBR), novembro de 2016"},
-    {id: 4, titulo: "3° Circuito de Cinências do Piauí - 2017", info: "Medalhista na Terceira colocação do Evento Estadual no Piauí, setembro de 2017"},
+    {id: 4, titulo: "3° Circuito de Ciências do Piauí - 2017", info: "Medalhista na Terceira colocação do Evento Estadual no Piauí, setembro de 2017"},
     {id: 5, titulo: "Olimpíada Brasileira de Robótica - 2017", info: "Medalhista na categoria de melhor Design de Robô na Olimpíada Brasileira de Robótica (OBR), novembro de 2017"},
     {id: 6, titulo: "Long Line Modalidade Lego - 2017", info: "Medalhista na Primeira colocação na competição Long Line do Evento ARTTRON no Piauí, setembro de 2017"},
 ]
@@ -28,31 +28,31 @@ const MeritosContainer = () => {
                             switch (merito.id) {
                             case 1:
                                 return (
-                                    <img src={OlimpFll} alt="" />
+                                    <img src={OlimpFll} alt="" className='img-card'/>
                                 )
                             case 2:
                                 return (
-                                    <img src={CertFll} alt="" />
+                                    <img src={CertFll} alt="" className='img-card'/>
                                 )
                             case 3:
                                 return (
-                                    <img src={Obr16} alt="" />
+                                    <img src={Obr16} alt="" className='img-card'/>
                                 )
                             case 4:
                                 return (
-                                    <img src={Regional} alt="" />
+                                    <img src={Regional} alt="" className='img-card'/>
                                 )
                             case 5:
                                 return (
-                                    <img src={Obr17} alt="" />
+                                    <img src={Obr17} alt="" className='img-card'/>
                                 )
                             case 6:
                                 return (
-                                    <img src={CertObr17} alt="" />
+                                    <img src={CertObr17} alt="" className='img-card'/>
                                 )
                             default:
                                 return (
-                                    <img src={Obr16} alt="" />
+                                    <img src={Obr16} alt="" className='img-card'/>
                                 )
                             }
                         })()}
@@ -67,6 +67,9 @@ const MeritosContainer = () => {
                     </div>
                 </div>
             ))}
+        </div>
+        <div className="tres-pontinhos">
+            <h1>...</h1>
         </div>
     </section>
   )
