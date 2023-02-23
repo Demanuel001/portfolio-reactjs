@@ -13,15 +13,31 @@
     padding-bottom: 3rem 
 
     img
-        max-width: 70%
+        max-width: 60%
         border-radius: variables.$container-border-radius
         position: absolute
         top: -3rem
+        @media (max-width: 450px)
+            max-width: 1000%
+        @media (max-width: 705px)
+            max-width: 37%
 
     .nome
         color: variables.$text-color
         font-size: 40px
-        margin-top: 12rem
+        margin-top: 8rem
+        @media (min-width: 570px)
+            margin-top: 5rem
+        @media (max-width: 1200px)
+            margin-top: 9rem
+        @media (min-width: 1300px)
+            margin-top: 10rem
+        @media (min-width: 1400px)
+            margin-top: 11rem
+        @media (min-width: 1500px)
+            margin-top: 12rem
+        @media (min-width: 1700px)
+            margin-top: 16rem
 
     h2
         font-family: variables.$font-sub-titulo

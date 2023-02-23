@@ -11,7 +11,7 @@ const Sidebar = () => {
             <h1 className='nome'>Danilo Emanuel</h1>
             <h2>Desenvolvedor web jr.</h2>
             <p className="title">
-                -Graduando ( 6/8 período ) em Sistemas de Informação na faculdade Estácio de SÁ. <br />
+                -Graduando ( 7/8 período ) em Sistemas de Informação na faculdade Estácio de SÁ. <br />
                 <br />
                 -Técnico em Informática, Ceep Liceu Parnaibano.
             </p>
