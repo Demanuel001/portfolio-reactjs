@@ -17,7 +17,8 @@ const AboutContainer = () => {
             Ingressei na área de programação em setembro de 2018 e desde então trabalho com: <br />
            -Desenvolvimento de aplicações, melhoria e manutenção do ERP com xHarbour, tabelas DBF; <br />
            -Desenvolvimento de WebService em Java SPRING; <br />
-           -SGBD PostgreSQL, Oracle, PL/SQL.
+           -SGBD PostgreSQL, Oracle, PL/SQL.  <br />
+            <br />
         </p>
     </section>
   )
