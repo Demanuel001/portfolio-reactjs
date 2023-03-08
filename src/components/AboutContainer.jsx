@@ -14,10 +14,10 @@ const AboutContainer = () => {
             Atualmente estou no 7° período do curso de Sistemas de Informação (Estácio de SÁ). <br />
         </p>
         <p>
-            Ingressei na área de programação em setembro de 2018 e desde então trabalho com: 
-           -xHarbour no ERP atual da empresa, tabelas DBF;
-           -Desenvolvimento de aplicações, melhoria e manutenção de ERP com xHarbour;
-           -Java EE, Java SPRING, PL/SQL;
+            Ingressei na área de programação em setembro de 2018 e desde então trabalho com: <br />
+           -xHarbour no ERP atual da empresa, tabelas DBF; <br />
+           -Desenvolvimento de aplicações, melhoria e manutenção de ERP com xHarbour; <br />
+           -Java EE, Java SPRING, PL/SQL; <br />
            -SGBD PostgreSQL para criação e manutenção de tabelas.
         </p>
     </section>
