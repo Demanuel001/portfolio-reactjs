@@ -6,7 +6,7 @@ const FooterContainer = () => {
   return (
     <div className="footer-container">
         <Events/>
-        <p className="autor">&copy;Copyright 2022 Danilo Emanuel</p>
+        <p className="autor">&copy;Copyright 2023 Danilo Emanuel</p>
     </div>
   )
 }

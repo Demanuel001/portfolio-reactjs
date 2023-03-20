@@ -17,9 +17,10 @@ const Sidebar = () => {
             </p>
             <SocialNetworks />
             <InformationContainer />
-            <button className="btn" onClick={()=>{alert("Ops... Ainda não disponivel.")}}>
-                Download curriculo
-            </button>
+
+            <form method="get" action="https://drive.google.com/file/d/17q-fhXKJKEYkt9PmpxQcCxCpORxJPe2A/view?usp=sharing">
+                <button className="btn" type="submit">Download curriculo</button>
+            </form>
         </aside>
     )
 }
