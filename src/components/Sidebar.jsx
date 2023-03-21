@@ -17,7 +17,6 @@ const Sidebar = () => {
             </p>
             <SocialNetworks />
             <InformationContainer />
-
             <form method="get" action="https://drive.google.com/file/d/17q-fhXKJKEYkt9PmpxQcCxCpORxJPe2A/view?usp=sharing">
                 <button className="btn" type="submit">Download curriculo</button>
             </form>
