@@ -9,11 +9,11 @@ const Sidebar = () => {
         <aside id="sidebar">
             <img src={Avatar} alt="Danilo Emanuel" />
             <h1 className='nome'>Danilo Emanuel</h1>
-            <h2>Desenvolvedor web jr.</h2>
+            <h2>Desenvolvedor Full Stack</h2>
             <p className="title">
-                -Graduando ( 7/8 período ) em Sistemas de Informação na faculdade Estácio de SÁ. <br />
+                -Graduando ( 8/8 período ) em Sistemas de Informação na faculdade Estácio de SÁ. <br />
                 <br />
-                -Técnico em Informática, Ceep Liceu Parnaibano.
+                -Técnico em Informática, Ceep Liceu Parnaibano (2015-2017).
             </p>
             <SocialNetworks />
             <InformationContainer />
